@@ -42,6 +42,7 @@ The **MicoSign** tool signs files with selected cryptographic options. After com
 
 ```bash
 java -cp bcprov-jdk18on-177.jar:./ mtss.MicoSign -help
+ ```
 
 #### MicoSign Options
 
@@ -60,6 +61,7 @@ java -cp bcprov-jdk18on-177.jar:./ mtss.MicoSign -help
 - `-s <String>`: Specify a custom extension for signature files.
 
 
+
 ## Usage
 
 ### MicoVerify
@@ -68,6 +70,7 @@ The **MicoVerify** tool verifies the authenticity and integrity of signed files.
 
 ```bash
 java -cp bcprov-jdk18on-177.jar:./ mtss.MicoVerify -help
+ ```
 
 #### MicoVerify Options
 -k <pem file>: Specify the PEM file containing the public key.
@@ -77,5 +80,9 @@ specific: Use the specific decoding method.
 -gp <file>,<signature>: List pairs of files and their corresponding signatures.
 Each file and its signature should be separated by a comma (e.g., file.txt,signature.txt).
 Leave a space between pairs if verifying multiple files.
+
+## License
+
+This project is licensed under the MIT License.
 
 
