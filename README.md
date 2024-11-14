@@ -1,2 +1,8 @@
 # Modification-Digital-Signature-Scheme
-I am researching on modification tolerant signature schemes using combinatorial group testing for my master's thesis. Once I have the algorithm ready, I will push it to this respiratory.
+
+This repository implements a Modification-Tolerant Signature Scheme (MTSS) based on the thesis Modification-Tolerant Signature Schemes using Combinatorial Group Testing: Theory, Algorithms, and Implementation. The scheme allows digital signatures to be verified even with certain modifications, ensuring reliable integrity and authenticity checks.
+
+Prerequisites
+
+Java Development Kit (JDK)
+Bouncy Castle Cryptographic Library (bcprov-jdk18on-177.jar)
