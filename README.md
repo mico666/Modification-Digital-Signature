@@ -78,8 +78,8 @@ java -cp bcprov-jdk18on-177.jar:./ mtss.MicoVerify -help
   - 'general`: Use the general decoding method.
   - 'specific`: Use the specific decoding method.
 - `gp <file>,<signature>`: List pairs of files and their corresponding signatures.
-  - `Each file and its signature should be separated by a comma (e.g., file.txt,signature.txt).
-  - `Leave a space between pairs if verifying multiple files.
+  - Each file and its signature should be separated by a comma (e.g., file.txt,signature.txt).
+  - Leave a space between pairs if verifying multiple files.
 
 ## License
 
