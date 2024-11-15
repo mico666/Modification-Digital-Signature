@@ -54,7 +54,7 @@ The project relies on **The Bouncy Castle Cryptographic Library** for cryptograp
 
 1. **Clone the Repository**:
     ```bash
-    git clone <repository-link>
+    git clone <https://github.com/micoluo/Modification-Digital-Signature-Scheme-Using-Combinatorial-Group-Testing.git>
     ```
 
 2. **Navigate to the project directory**:
