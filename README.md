@@ -1,6 +1,6 @@
 # Modification-Tolerant Signature Scheme (MTSS)
 
-This project implements a Modification-Tolerant Signature Scheme (MTSS) based on the thesis: **Modification-Tolerant Signature Schemes using Combinatorial Group Testing: Theory, Algorithms, and Implementation**. This scheme enables robust digital signatures that can withstand certain types of modifications, ensuring reliable verification of file integrity and authenticity.
+This project implements a Modification-Tolerant Signature Scheme (MTSS) based on the thesis: **Modification-Tolerant Signature Schemes using Combinatorial Group Testing: Theory, Algorithms, and Implementation**. This scheme enables robust digital signatures that can locate up to certain numbers (d) of modifications. 
 
 ## Project Overview
 
