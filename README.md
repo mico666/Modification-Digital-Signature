@@ -73,11 +73,11 @@ java -cp bcprov-jdk18on-177.jar:./ mtss.MicoVerify -help
  ```
 
 #### MicoVerify Options
-- `k <pem file>: Specify the PEM file containing the public key.
-- `gt <general|specific>: Select the group testing method.
-  - 'general: Use the general decoding method.
-  - 'specific: Use the specific decoding method.
-- `gp <file>,<signature>: List pairs of files and their corresponding signatures.
+- `k <pem file>`: Specify the PEM file containing the public key.
+- `gt <general|specific>`: Select the group testing method.
+  - 'general`: Use the general decoding method.
+  - 'specific`: Use the specific decoding method.
+- `gp <file>,<signature>`: List pairs of files and their corresponding signatures.
   - `Each file and its signature should be separated by a comma (e.g., file.txt,signature.txt).
   - `Leave a space between pairs if verifying multiple files.
 
