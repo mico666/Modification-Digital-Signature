@@ -95,9 +95,6 @@ java -cp bcprov-jdk18on-177.jar:./ mtss.MicoSign -help
 - `-s <String>`: Specify a custom extension for signature files.
 
 
-
-## Usage
-
 ### MicoVerify
 
 The **MicoVerify** tool verifies the authenticity and integrity of signed files. To use MicoVerify, run:
