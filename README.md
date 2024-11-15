@@ -111,8 +111,6 @@ java -cp bcprov-jdk18on-177.jar:./ mtss.MicoVerify -help
   - Each file and its signature should be separated by a comma (e.g., `file.txt,signature.txt`).
   - Leave a space between pairs if verifying multiple files.
 
-## License
 
-This project is licensed under the MIT License.
 
 
