@@ -2,6 +2,39 @@
 
 This project implements a Modification-Tolerant Signature Scheme (MTSS) based on the thesis: **Modification-Tolerant Signature Schemes using Combinatorial Group Testing: Theory, Algorithms, and Implementation**. This scheme enables robust digital signatures that can locate up to certain numbers (d) of modifications. 
 
+## Thesis Abstract 
+
+Matrices that are d-cover-free are used in non-adaptive combinatorial group testing (CGT).
+They allow for locating up to d defectives within a set of n items by testing them in groups.
+In non-adaptive group testing, all tests are determined before any are conducted. A group
+test yields a negative result if and only if all items in the group are non-defective. In this
+thesis, we study d-cover-free families (CFFs) built from set systems and codes. Examples of
+these include Sperner sets, Steiner Triple Systems, and Reed-Solomon codes. Our primary
+focus is on decoding algorithms of CGT, which are used to accurately identify all defectives
+based on the test results. We introduce a general decoding algorithm that relies solely on
+the d-CFF property of the matrix, as well as specialized algorithms designed according to
+the specific construction of d-CFFs. Additionally, we conduct experiments to evaluate the
+performance of each decoding method and compare the general and specialized algorithms,
+particularly in terms of their efficiency as n and d grow.
+
+This study also explores the application of non-adaptive combinatorial group testing
+using d-CFF to digital signatures. Digital signatures are mathematical schemes designed to
+ensure data integrity and authenticity of digital communications. They verify the authentic-
+ity of a signature and ensure that the signed document has not been tampered with. These
+schemes include classical methods like RSA-based and ECDSA, as well as post-quantum
+approaches such as FALCON and SPHINCS+. However, they lack the ability to identify the
+location of changes if a document has been modified. By incorporating d-CFFs into these
+digital signatures, we can not only verify the authenticity of the signature, but also locate
+up to d modifications, leading to what is known as d-modification tolerant signature schemes
+(MTSS).
+
+Our work advances the study of modification-tolerant signature schemes (MTSS) by
+practically implementing d-MTSS for various document types. Key achievements include
+developing efficient data structures and decoding algorithms for different constuctions of
+d-CFFs. We also conduct extensive testing of d-MTSS across multiple scenarios, and our
+results demonstrate its viability where document modifications are necessary. This research
+paves the way for future enhancements in data security and digital signature methods.
+
 ## Project Overview
 
 The MTSS project includes two main components:
