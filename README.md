@@ -64,8 +64,8 @@ The project relies on **The Bouncy Castle Cryptographic Library** for cryptograp
 
 3. **Compile the Project**: Navigate to the source directory and compile the Java files with the Bouncy Castle library.
     ```bash
-    cd src/mtss
-    javac -cp bcprov-jdk18on-177.jar:./ *.java
+    cd src
+    javac -cp bcprov-jdk18on-177.jar:./ */*.java
     ```
 
 ## Usage
@@ -75,7 +75,7 @@ The project relies on **The Bouncy Castle Cryptographic Library** for cryptograp
 The **MicoSign** tool signs files with selected cryptographic options. After compilation, you can run MicoSign as follows:
 
 ```bash
-java -cp bcprov-jdk18on-177.jar:./ mtss.MicoSign -help
+java -cp bcprov-jdk18on-177.jar:./ terminal.MicoSign -help
  ```
 
 #### MicoSign Options
@@ -94,13 +94,17 @@ java -cp bcprov-jdk18on-177.jar:./ mtss.MicoSign -help
 - `-b <integer> | -z <integer>`: Define block size or number of blocks.
 - `-s <String>`: Specify a custom extension for signature files.
 
+### Example (one file)
+```bash
+java -cp bcprov-jdk18on-177.jar:./ terminal.MicoSign -a ecdsa -h sha3256 -d 5 -c rs -s abc -f list -t test.txt -z 10
+```
 
 ### MicoVerify
 
 The **MicoVerify** tool verifies the authenticity and integrity of signed files. To use MicoVerify, run:
 
 ```bash
-java -cp bcprov-jdk18on-177.jar:./ mtss.MicoVerify -help
+java -cp bcprov-jdk18on-177.jar:./ terminal.MicoVerify -help
  ```
 #### MicoVerify Options
 - `-k <pem file>`: Specify the PEM file containing the public key.
@@ -112,5 +116,8 @@ java -cp bcprov-jdk18on-177.jar:./ mtss.MicoVerify -help
   - Leave a space between pairs if verifying multiple files.
 
 
-
+### Example (one file)
+```bash
+java -cp bcprov-jdk18on-177.jar:./ terminal.MicoVerify -gp test.txt,test_abc.txt -k publicKey.pem -gt general 
+```
 
