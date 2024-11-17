@@ -94,7 +94,7 @@ java -cp bcprov-jdk18on-177.jar:./ terminal.MicoSign -help
 - `-b <integer> | -z <integer>`: Define block size or number of blocks.
 - `-s <String>`: Specify a custom extension for signature files.
 
-### Example (one file)
+#### Example (one file)
 ```bash
 java -cp bcprov-jdk18on-177.jar:./ terminal.MicoSign -a ecdsa -h sha3256 -d 5 -c rs -s abc -f list -t test.txt -z 10
 ```
@@ -116,7 +116,7 @@ java -cp bcprov-jdk18on-177.jar:./ terminal.MicoVerify -help
   - Leave a space between pairs if verifying multiple files.
 
 
-### Example (one file)
+#### Example (one file)
 ```bash
 java -cp bcprov-jdk18on-177.jar:./ terminal.MicoVerify -gp test.txt,test_abc.txt -k publicKey.pem -gt general 
 ```
