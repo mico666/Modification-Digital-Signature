@@ -43,7 +43,7 @@ The MTSS project includes two main components:
 - **MicoSign**: A tool for signing files using a chosen cryptographic algorithm.
 - **MicoVerify**: A tool for verifying the integrity and authenticity of signed files.
 
-The project relies on **The Bouncy Castle Cryptographic Library** for cryptographic operations, specifically using `bcprov-jdk18on-177.jar`.
+The project uses an external crypto library **The Bouncy Castle Cryptographic Library**, specifically using `bcprov-jdk18on-177.jar`.
 
 ## Prerequisites
 
